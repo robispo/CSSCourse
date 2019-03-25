@@ -1,11 +1,18 @@
 body {
   background: #ccc url('../img/photography.png') repeat;
   font-family: 'ZCOOL XiaoWei', serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 /**************************************-Starts-Header-**************************************/
 
-main, .divMainHeader {
+.divMainHeader {
   background: #ffffff;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -18,11 +25,11 @@ main, .divMainHeader {
   margin-bottom: 2.8rem;
 }
 
-.divMainHeader ul {
+.divMainHeader > ul {
   border-bottom: 1px solid #ecf0f1;
 }
 
-.divMainHeader > ul li {
+.divMainHeader > .row > ul li {
   display: inline-block;
   margin: 0 55px;
   padding-bottom: 20px;
@@ -47,12 +54,27 @@ main, .divMainHeader {
   color: #ffffff;
 }
 
-.divMainHeader>.slider>.indicators{
-    display: none;
+.divMainHeader .slider > .indicators {
+  display: none;
 }
 /**************************************-Ends-Header-**************************************/
 
 /**************************************-Starts-Main-**************************************/
+.h2size {
+  font-size: 2rem;
+}
+
+.marginbottonzero {
+  margin-bottom: 0 !important;
+}
+
+.paddingleftzero {
+  padding-left: 0 !important;
+}
+
+.paddingzero {
+  padding: 0 !important;
+}
 /**************************************-Ends-Main-**************************************/
 /**************************************-Starts-Footer-**************************************/
 /**************************************-Ends-Footer-**************************************/

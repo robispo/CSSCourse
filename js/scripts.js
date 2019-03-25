@@ -4,4 +4,8 @@ $(document).ready(function(){
     $('#iClearSearch').on('click',function(){
         $('#search').val('');
     });
+
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
   });
